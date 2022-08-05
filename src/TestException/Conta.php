@@ -1,5 +1,5 @@
 <?php
-namespace Impacta;
+namespace Impacta\Basnco;
 class Conta {
 
     private float $saldo = 0;

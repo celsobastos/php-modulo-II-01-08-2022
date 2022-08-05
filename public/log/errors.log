@@ -1,0 +1,96 @@
+[03-Aug-2022 19:26:55 America/Sao_Paulo] PHP Fatal error:  Uncaught DivisionByZeroError: Division by zero in /home/celso/Impacta/Treinamentos/PHP-module-II/php-modulo-II-01-08-2022/public/index.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/celso/Impacta/Treinamentos/PHP-module-II/php-modulo-II-01-08-2022/public/index.php on line 11
+[03-Aug-2022 19:27:27 America/Sao_Paulo] PHP Fatal error:  Uncaught DivisionByZeroError: Division by zero in /home/celso/Impacta/Treinamentos/PHP-module-II/php-modulo-II-01-08-2022/public/index.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/celso/Impacta/Treinamentos/PHP-module-II/php-modulo-II-01-08-2022/public/index.php on line 11
+[03-Aug-2022 19:28:28 America/Sao_Paulo] PHP Fatal error:  Uncaught RuntimeException: Index invalid or out of range in /home/celso/Impacta/Treinamentos/PHP-module-II/php-modulo-II-01-08-2022/public/index.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/celso/Impacta/Treinamentos/PHP-module-II/php-modulo-II-01-08-2022/public/index.php on line 12
+[03-Aug-2022 19:29:05 America/Sao_Paulo] PHP Fatal error:  Uncaught RuntimeException: Index invalid or out of range in /home/celso/Impacta/Treinamentos/PHP-module-II/php-modulo-II-01-08-2022/public/index.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/celso/Impacta/Treinamentos/PHP-module-II/php-modulo-II-01-08-2022/public/index.php on line 12
+[03-Aug-2022 19:29:05 America/Sao_Paulo] PHP Fatal error:  Uncaught RuntimeException: Index invalid or out of range in /home/celso/Impacta/Treinamentos/PHP-module-II/php-modulo-II-01-08-2022/public/index.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/celso/Impacta/Treinamentos/PHP-module-II/php-modulo-II-01-08-2022/public/index.php on line 12
+[03-Aug-2022 19:29:05 America/Sao_Paulo] PHP Fatal error:  Uncaught RuntimeException: Index invalid or out of range in /home/celso/Impacta/Treinamentos/PHP-module-II/php-modulo-II-01-08-2022/public/index.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/celso/Impacta/Treinamentos/PHP-module-II/php-modulo-II-01-08-2022/public/index.php on line 12
+[03-Aug-2022 19:29:16 America/Sao_Paulo] PHP Fatal error:  Uncaught RuntimeException: Index invalid or out of range in /home/celso/Impacta/Treinamentos/PHP-module-II/php-modulo-II-01-08-2022/public/index.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/celso/Impacta/Treinamentos/PHP-module-II/php-modulo-II-01-08-2022/public/index.php on line 12
+[03-Aug-2022 19:29:17 America/Sao_Paulo] PHP Fatal error:  Uncaught RuntimeException: Index invalid or out of range in /home/celso/Impacta/Treinamentos/PHP-module-II/php-modulo-II-01-08-2022/public/index.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/celso/Impacta/Treinamentos/PHP-module-II/php-modulo-II-01-08-2022/public/index.php on line 12
+[03-Aug-2022 19:29:17 America/Sao_Paulo] PHP Fatal error:  Uncaught RuntimeException: Index invalid or out of range in /home/celso/Impacta/Treinamentos/PHP-module-II/php-modulo-II-01-08-2022/public/index.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/celso/Impacta/Treinamentos/PHP-module-II/php-modulo-II-01-08-2022/public/index.php on line 12
+[03-Aug-2022 19:32:06 America/Sao_Paulo] PHP Warning:  Undefined variable $file in /home/celso/Impacta/Treinamentos/PHP-module-II/php-modulo-II-01-08-2022/public/index.php on line 11
+[03-Aug-2022 19:32:06 America/Sao_Paulo] PHP Fatal error:  Uncaught ArgumentCountError: fopen() expects at least 2 arguments, 1 given in /home/celso/Impacta/Treinamentos/PHP-module-II/php-modulo-II-01-08-2022/public/index.php:11
+Stack trace:
+#0 /home/celso/Impacta/Treinamentos/PHP-module-II/php-modulo-II-01-08-2022/public/index.php(11): fopen()
+#1 {main}
+  thrown in /home/celso/Impacta/Treinamentos/PHP-module-II/php-modulo-II-01-08-2022/public/index.php on line 11
+[03-Aug-2022 19:32:07 America/Sao_Paulo] PHP Warning:  Undefined variable $file in /home/celso/Impacta/Treinamentos/PHP-module-II/php-modulo-II-01-08-2022/public/index.php on line 11
+[03-Aug-2022 19:32:07 America/Sao_Paulo] PHP Fatal error:  Uncaught ArgumentCountError: fopen() expects at least 2 arguments, 1 given in /home/celso/Impacta/Treinamentos/PHP-module-II/php-modulo-II-01-08-2022/public/index.php:11
+Stack trace:
+#0 /home/celso/Impacta/Treinamentos/PHP-module-II/php-modulo-II-01-08-2022/public/index.php(11): fopen()
+#1 {main}
+  thrown in /home/celso/Impacta/Treinamentos/PHP-module-II/php-modulo-II-01-08-2022/public/index.php on line 11
+[03-Aug-2022 19:32:07 America/Sao_Paulo] PHP Warning:  Undefined variable $file in /home/celso/Impacta/Treinamentos/PHP-module-II/php-modulo-II-01-08-2022/public/index.php on line 11
+[03-Aug-2022 19:32:07 America/Sao_Paulo] PHP Fatal error:  Uncaught ArgumentCountError: fopen() expects at least 2 arguments, 1 given in /home/celso/Impacta/Treinamentos/PHP-module-II/php-modulo-II-01-08-2022/public/index.php:11
+Stack trace:
+#0 /home/celso/Impacta/Treinamentos/PHP-module-II/php-modulo-II-01-08-2022/public/index.php(11): fopen()
+#1 {main}
+  thrown in /home/celso/Impacta/Treinamentos/PHP-module-II/php-modulo-II-01-08-2022/public/index.php on line 11
+[03-Aug-2022 19:32:20 America/Sao_Paulo] PHP Fatal error:  Uncaught ArgumentCountError: fopen() expects at least 2 arguments, 1 given in /home/celso/Impacta/Treinamentos/PHP-module-II/php-modulo-II-01-08-2022/public/index.php:11
+Stack trace:
+#0 /home/celso/Impacta/Treinamentos/PHP-module-II/php-modulo-II-01-08-2022/public/index.php(11): fopen()
+#1 {main}
+  thrown in /home/celso/Impacta/Treinamentos/PHP-module-II/php-modulo-II-01-08-2022/public/index.php on line 11
+[03-Aug-2022 19:32:29 America/Sao_Paulo] PHP Warning:  Undefined variable $file in /home/celso/Impacta/Treinamentos/PHP-module-II/php-modulo-II-01-08-2022/public/index.php on line 11
+[03-Aug-2022 19:32:29 America/Sao_Paulo] PHP Fatal error:  Uncaught ArgumentCountError: fopen() expects at least 2 arguments, 1 given in /home/celso/Impacta/Treinamentos/PHP-module-II/php-modulo-II-01-08-2022/public/index.php:11
+Stack trace:
+#0 /home/celso/Impacta/Treinamentos/PHP-module-II/php-modulo-II-01-08-2022/public/index.php(11): fopen()
+#1 {main}
+  thrown in /home/celso/Impacta/Treinamentos/PHP-module-II/php-modulo-II-01-08-2022/public/index.php on line 11
+[03-Aug-2022 19:33:03 America/Sao_Paulo] PHP Fatal error:  Uncaught ArgumentCountError: fopen() expects at least 2 arguments, 1 given in /home/celso/Impacta/Treinamentos/PHP-module-II/php-modulo-II-01-08-2022/public/index.php:11
+Stack trace:
+#0 /home/celso/Impacta/Treinamentos/PHP-module-II/php-modulo-II-01-08-2022/public/index.php(11): fopen()
+#1 {main}
+  thrown in /home/celso/Impacta/Treinamentos/PHP-module-II/php-modulo-II-01-08-2022/public/index.php on line 11
+[03-Aug-2022 19:36:15 America/Sao_Paulo] PHP Fatal error:  Uncaught RuntimeException: Index invalid or out of range in /home/celso/Impacta/Treinamentos/PHP-module-II/php-modulo-II-01-08-2022/public/index.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/celso/Impacta/Treinamentos/PHP-module-II/php-modulo-II-01-08-2022/public/index.php on line 12
+[03-Aug-2022 19:36:16 America/Sao_Paulo] PHP Fatal error:  Uncaught RuntimeException: Index invalid or out of range in /home/celso/Impacta/Treinamentos/PHP-module-II/php-modulo-II-01-08-2022/public/index.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/celso/Impacta/Treinamentos/PHP-module-II/php-modulo-II-01-08-2022/public/index.php on line 12
+[03-Aug-2022 19:36:27 America/Sao_Paulo] PHP Fatal error:  Uncaught RuntimeException: Index invalid or out of range in /home/celso/Impacta/Treinamentos/PHP-module-II/php-modulo-II-01-08-2022/public/index.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/celso/Impacta/Treinamentos/PHP-module-II/php-modulo-II-01-08-2022/public/index.php on line 12
+[03-Aug-2022 19:36:28 America/Sao_Paulo] PHP Fatal error:  Uncaught RuntimeException: Index invalid or out of range in /home/celso/Impacta/Treinamentos/PHP-module-II/php-modulo-II-01-08-2022/public/index.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/celso/Impacta/Treinamentos/PHP-module-II/php-modulo-II-01-08-2022/public/index.php on line 12
+[03-Aug-2022 19:36:54 America/Sao_Paulo] PHP Fatal error:  Uncaught Impacta\MyException: Saldo Insuficiente: 1000 in /home/celso/Impacta/Treinamentos/PHP-module-II/php-modulo-II-01-08-2022/src/Conta.php:14
+Stack trace:
+#0 /home/celso/Impacta/Treinamentos/PHP-module-II/php-modulo-II-01-08-2022/public/index.php(20): Impacta\Conta->sacar()
+#1 {main}
+  thrown in /home/celso/Impacta/Treinamentos/PHP-module-II/php-modulo-II-01-08-2022/src/Conta.php on line 14
+[03-Aug-2022 19:36:55 America/Sao_Paulo] PHP Fatal error:  Uncaught Impacta\MyException: Saldo Insuficiente: 1000 in /home/celso/Impacta/Treinamentos/PHP-module-II/php-modulo-II-01-08-2022/src/Conta.php:14
+Stack trace:
+#0 /home/celso/Impacta/Treinamentos/PHP-module-II/php-modulo-II-01-08-2022/public/index.php(20): Impacta\Conta->sacar()
+#1 {main}
+  thrown in /home/celso/Impacta/Treinamentos/PHP-module-II/php-modulo-II-01-08-2022/src/Conta.php on line 14
