@@ -14,9 +14,10 @@ final class Gerente extends Funcionario implements AutenticarInterface {
         $login_banco = 'paulo@bancoimpacta.com';
         $senha_banco = '123456';
         if($login_banco === $login && $senha_banco === $senha) {
-            echo "$this->getNome(), Autenticado com sucesso";
+            echo $this->getNome() . " Autenticado com sucesso" . PHP_EOL;
+            die;
         }
 
-        throw new \Exception("Ops! $this->getNome(), Autenticação Falhou");
+        throw new \Exception("Ops! " . $this->getNome() . ", Autenticação Falhou");
     }
 }

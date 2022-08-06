@@ -12,7 +12,7 @@ class Telefone {
         $this->numero = $numero;
     }
 
-    public function __toString() {
-        return "($this->codigoArea) $this->numero";
-    }
+    // public function __toString() {
+    //     return "($this->codigoArea) $this->numero";
+    // }
 }

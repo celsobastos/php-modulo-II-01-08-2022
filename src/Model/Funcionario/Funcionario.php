@@ -49,7 +49,7 @@ abstract class Funcionario extends Pessoa {
      * @return float
      *   O salário do Funcionário.
      */
-    protected function getSalario(): float {
+    public function getSalario(): float {
         return $this->salario;
     }
 

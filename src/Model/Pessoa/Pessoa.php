@@ -33,8 +33,31 @@ abstract class Pessoa {
         return $this->nome;
     }
 
+    public function setNome(string $nome) {
+        $this->nome = $nome;
+    }
+
+    public function getEndereco(): string {
+        return $this->endereco;
+    }
+
+    public function __get($nome_metodo) {
+        $getMetodo = 'get' . ucfirst($nome_metodo); // nome - Nome
+        // getNome
+        // getEndereco
+        return $this->$getMetodo();
+    }
+
+    public function __set($name, $value){
+        $this->$name = $value;
+    }
+
     public function addTelefone(Telefone $telefone): void {
         $this->telefone[] = $telefone;
+    }
+
+    public function __unset($name) {
+        echo 'testando o unset ' . $name . PHP_EOL;
     }
 
 }
