@@ -1,41 +1,70 @@
 <?php
-use Psr\Http\Message\ResponseInterface as Response;
-use Psr\Http\Message\ServerRequestInterface as Request;
-use Slim\Factory\AppFactory;
 
 require __DIR__ . '/../vendor/autoload.php';
 
-$app = AppFactory::create();
+// $connect = new PDO(
+//     'mysql:host=localhost;dbname=impacta',
+//     'impacta',
+//     '123456'
+// );
+// $connect->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-$livros = new stdClass();
-$livros->data = [
-    '1' => [
-        'autor' => 'Machado de Assis',
-        'Titulo' => 'Meu Cajueiro',
-    ],
-    '2' => [
-        'autor' => 'Paulo Coelho',
-        'Titulo' => 'Caminho de São Tiago',
-    ],
-    '3' => [
-        'autor' => 'Marcos de Oliveira',
-        'Titulo' => 'Estrategia, a arte da vida',
-    ],
-];
 
-$dados = json_encode($livros);
+// try {
 
-$app->get('/livros', function (Request $request, Response $response, $args) use ($dados) {
-    $response->getBody()->write($dados);
-    return $response->withHeader('Content-Type', 'application/json')->withStatus(201);
-});
+//     $sql = "INSERT INTO clientes (name, endereco, telefone) VALUES ('Joana', 'Rua Padre Rodrigo', '11 95645-6456');";
+//     $result = $connect->exec($sql);
 
-$app->post('/livros', function (Request $request, Response $response, $args) use ($dados) {
-    $response->getBody()->write('ola isso foi um post');
-    return $response;
-});
+//     if ($result) {
+//         echo 'Inserido com sucesso';
+//     }
 
-$app->run();
+// } catch (PDOException $e) {
+//     echo $e->getMessage();
+// }
+
+
+
+// die;
+
+
+
+// use Psr\Http\Message\ResponseInterface as Response;
+// use Psr\Http\Message\ServerRequestInterface as Request;
+// use Slim\Factory\AppFactory;
+
+
+// $app = AppFactory::create();
+
+// $livros = new stdClass();
+// $livros->data = [
+//     '1' => [
+//         'autor' => 'Machado de Assis',
+//         'Titulo' => 'Meu Cajueiro',
+//     ],
+//     '2' => [
+//         'autor' => 'Paulo Coelho',
+//         'Titulo' => 'Caminho de São Tiago',
+//     ],
+//     '3' => [
+//         'autor' => 'Marcos de Oliveira',
+//         'Titulo' => 'Estrategia, a arte da vida',
+//     ],
+// ];
+
+// $dados = json_encode($livros);
+
+// $app->get('/livros', function (Request $request, Response $response, $args) use ($dados) {
+//     $response->getBody()->write($dados);
+//     return $response->withHeader('Content-Type', 'application/json')->withStatus(201);
+// });
+
+// $app->post('/livros', function (Request $request, Response $response, $args) use ($dados) {
+//     $response->getBody()->write('ola isso foi um post');
+//     return $response;
+// });
+
+// $app->run();
 
 
 // $verbo = $_SERVER['REQUEST_METHOD'];
@@ -135,3 +164,22 @@ print_r(json_decode($response->getBody())); // '{"id": 1420053, "name": "guzzle"
 echo 'Teste';
 
 */
+
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="insert.php" method="post">
+        Nome:
+        <input type="text" name="nome" >
+        <button>Enviar</button>
+    </form>
+</body>
+</html>
