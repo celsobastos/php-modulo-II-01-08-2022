@@ -2,6 +2,81 @@
 
 require __DIR__ . '/../vendor/autoload.php';
 
+
+// Data Mapper
+
+use GuzzleHttp\Client;
+use Impacta\Banco\PadroesProjeto\DataMapper\Cliente;
+use Impacta\Banco\PadroesProjeto\DataMapper\ClienteDataMapper;
+$pdo = new PDO(
+    'mysql:host=localhost;dbname=impacta',
+    'impacta',
+    '123456',
+    [
+        PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
+        PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC
+    ]
+);
+
+$cliente = new ClienteDataMapper($pdo);
+$resultado = $cliente->salvar(new Cliente(1, 'Amanda de Oliveira', 'Rua: Pastor Antunes', '(11) 95854-6584'));
+
+if ($resultado) {
+    echo 'Cliente salvo com sucesso! Retorno: ' . $resultado;
+}
+
+
+$cli = $cliente->getAll();
+echo '<pre>';
+var_dump($cli);
+die;
+
+// Depency Injection
+use Impacta\Banco\PadroesProjeto\DependencyInjection\Aluno;
+use Impacta\Banco\PadroesProjeto\DependencyInjection\Mysql;
+use Impacta\Banco\PadroesProjeto\DependencyInjection\Mongo;
+$mysql = new Mysql();
+$mongo = new Mongo();
+$aluno = new Aluno($mongo);
+$aluno->nome = 'Octavio';
+echo $aluno->save();
+
+exit;
+// stategy
+use Impacta\Banco\PadroesProjeto\Strategy\Servico;
+use Impacta\Banco\PadroesProjeto\Strategy\Atendente;
+use Impacta\Banco\PadroesProjeto\Strategy\Estagiario;
+
+$calc = new Servico(new Atendente('Jonas', 2500));
+$calc->calcularBonus();
+echo $calc->report();
+
+
+/** Forma incorreta de implementação */
+// use Impacta\Banco\PadroesProjeto\Strategy\Funcionario;
+// $funcionarioStagiario = new Funcionario(
+//     'Pedro',
+//     2000,
+//     'estagiario'
+// );
+// $funcionarioStagiario->applicarBonus();
+// echo $funcionarioStagiario .'<br>';
+
+// $funcAtendente = new Funcionario(
+//     'Camila',
+//     2800,
+//     'atendente'
+// );
+// $funcAtendente->applicarBonus();
+// echo $funcAtendente;
+
+exit;
+use Impacta\Banco\PadroesProjeto\Factory\ClienteFactory;
+// Factory
+$factory = new ClienteFactory('ClientePessoaJuridica');
+$cliente = $factory->createObject();
+echo $cliente->perfil();
+
 // $connect = new PDO(
 //     'mysql:host=localhost;dbname=impacta',
 //     'impacta',
@@ -167,7 +242,7 @@ echo 'Teste';
 
 ?>
 
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -182,4 +257,4 @@ echo 'Teste';
         <button>Enviar</button>
     </form>
 </body>
-</html>
+</html> -->
