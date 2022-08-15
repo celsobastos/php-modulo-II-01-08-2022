@@ -1,21 +1,20 @@
 <?php
 
-namespace Cliente\Infrastructure;
+namespace Cliente\Model\Repository;
 use Cliente\Model\Cliente;
-
 use PDO;
 use PDOException;
 
 class ClienteDataMapper {
-    private PDO $register;
+    private $connect;
 
-    public function __construct(PDO $register) {
-        $this->register = $register;
+    public function __construct(DbConnectInterface $connect) {
+        $this->connect = $connect->connect();
     }
 
     public function getById(int $id): Cliente {
         try {
-            $stmt = $this->register->prepare('SELECT * FROM clientes WHERE id = :id');
+            $stmt = $this->connect->prepare('SELECT * FROM clientes WHERE id = :id');
             $stmt->bindValue(':id', $id, PDO::PARAM_INT);
             $stmt->execute();
             $cliente = $stmt->fetch(PDO::FETCH_OBJ);
@@ -33,7 +32,7 @@ class ClienteDataMapper {
 
     public function getAll(): array {
         try {
-            $stmt = $this->register->prepare('SELECT * FROM clientes');
+            $stmt = $this->connect->prepare('SELECT * FROM clientes');
             $stmt->execute();
             $clientes = [];
             while($cliente = $stmt->fetch(PDO::FETCH_OBJ)) {
